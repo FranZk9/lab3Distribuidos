@@ -1,4 +1,4 @@
-module github.com/Sistemas-Distribuidos-2023-02/Grupo22-Laboratorio-3
+module github.com/FranZk9/lab3Distribuidos
 
 go 1.13
 
