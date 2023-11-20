@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	pb "github.com/Sistemas-Distribuidos-2023-02/Grupo22-Laboratorio-3/proto"
+	pb "github.com/FranZk9/lab3Distribuidos/proto"
 	"google.golang.org/grpc"
 )
 

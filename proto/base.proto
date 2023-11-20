@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package grpc;
 
-option go_package = "github.com/Sistemas-Distribuidos-2023-02/Grupo22-Laboratorio-3/proto";
+option go_package = "github.com/FranZk9/lab3Distribuidos/proto";
 
 message Mensaje {
     string nombre = 1;
@@ -28,10 +28,10 @@ message CommandGet{
 }
 
 service MessageService {
-    rpc Intercambio (Message) returns (Message);    
-    rpc AgregarBase(CommandAddUpdate) returns (Message);
-    rpc RenombrarBase(CommandRename) returns (Message);
-    rpc ActualizarValor(CommandAddUpdate) returns (Message);
-    rpc BorrarBase(CommandDelete) returns (Message);
-    rpc GetSoldados(CommandGet) returns (Message);    
+    rpc Intercambio (Mensaje) returns (Mensaje);    
+    rpc AgregarBase(CommandAddUpdate) returns (Mensaje);
+    rpc RenombrarBase(CommandRename) returns (Mensaje);
+    rpc ActualizarValor(CommandAddUpdate) returns (Mensaje);
+    rpc BorrarBase(CommandDelete) returns (Mensaje);
+    rpc GetSoldados(CommandGet) returns (Mensaje);    
 }
